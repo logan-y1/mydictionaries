@@ -9,8 +9,13 @@ person["pets"] = {"dog": "Fido", "cat": "Sox"}
 #print(person)
 
 #print out the name of the second child
+print(type(person['children']))
+print(person['children'][1])
+
 
 # Print out the name of the cat
+print(type(person['pets']))
+print(person['pets'][3])
 
 # iterate through all children and print out all children
 

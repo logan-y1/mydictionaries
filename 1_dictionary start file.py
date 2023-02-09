@@ -30,11 +30,13 @@ print()
 
 #phone = phonebook["Chris"]
 #print(phonebook['Chris'])
+
 name = 'Chris'
 if  name in phonebook:
     print(phonebook[name])
 else:
     print(f"{name} is not in the phonebook")
+print(phonebook['Chris])
 
 
 
@@ -128,6 +130,9 @@ print()
 print('*****  start section 7 - using pop method ********')
 print()
 
+remove = phonebook.pop('Chris', 'not found')
+print(remove)
+print(phonebook)
 
 
 print()
@@ -140,19 +145,11 @@ print()
 print('*****  start section 8 - using popitem ********')
 print()
 
-#pop method
-remove = phonebook.pop('Chris','not found')
-print(remove)
-print(phonebook)
-
 
 #deletes the last item 
-a - phonebook.popitem()
+a = phonebook.popitem()
 print(a)
 print(phonebook)
-
-
-
 
 
 
